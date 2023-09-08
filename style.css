@@ -1,0 +1,63 @@
+body {
+    background-image: url(img/bg.jpg);
+}
+
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    background-color: ;
+}
+
+#bird {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/Flying_bird.gif);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#three {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/three.png);
+    background-size: 40px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: threeMov 2s infinite linear;
+}
+
+@keyframes threeMov {
+    0% {
+        left: 580px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+.fly {
+    animation: fly 0.3s linear;
+}
+
+@keyframes fly {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    50% {
+        top: 60px;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
